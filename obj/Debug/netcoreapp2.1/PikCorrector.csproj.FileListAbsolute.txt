@@ -9,3 +9,14 @@ C:\#Coding\PikCorrector\obj\Debug\netcoreapp2.1\PikCorrector.AssemblyInfoInputs.
 C:\#Coding\PikCorrector\obj\Debug\netcoreapp2.1\PikCorrector.AssemblyInfo.cs
 C:\#Coding\PikCorrector\obj\Debug\netcoreapp2.1\PikCorrector.dll
 C:\#Coding\PikCorrector\obj\Debug\netcoreapp2.1\PikCorrector.pdb
+D:\#Projects\#REPOS\PikCorrector\bin\Debug\netcoreapp2.1\PikCorrector.deps.json
+D:\#Projects\#REPOS\PikCorrector\bin\Debug\netcoreapp2.1\PikCorrector.runtimeconfig.json
+D:\#Projects\#REPOS\PikCorrector\bin\Debug\netcoreapp2.1\PikCorrector.runtimeconfig.dev.json
+D:\#Projects\#REPOS\PikCorrector\bin\Debug\netcoreapp2.1\PikCorrector.dll
+D:\#Projects\#REPOS\PikCorrector\bin\Debug\netcoreapp2.1\PikCorrector.pdb
+D:\#Projects\#REPOS\PikCorrector\obj\Debug\netcoreapp2.1\PikCorrector.csprojAssemblyReference.cache
+D:\#Projects\#REPOS\PikCorrector\obj\Debug\netcoreapp2.1\PikCorrector.csproj.CoreCompileInputs.cache
+D:\#Projects\#REPOS\PikCorrector\obj\Debug\netcoreapp2.1\PikCorrector.AssemblyInfoInputs.cache
+D:\#Projects\#REPOS\PikCorrector\obj\Debug\netcoreapp2.1\PikCorrector.AssemblyInfo.cs
+D:\#Projects\#REPOS\PikCorrector\obj\Debug\netcoreapp2.1\PikCorrector.dll
+D:\#Projects\#REPOS\PikCorrector\obj\Debug\netcoreapp2.1\PikCorrector.pdb

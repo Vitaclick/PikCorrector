@@ -6,31 +6,20 @@ using System.Xml.Linq;
 
 namespace PikCorrector
 {
-    class Program
+  class Program
+  {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            // XDocument xmlDoc = null;
-            var inFileName = @"C:\#Coding\PikCorrector\PIK_PluginConfig.xml";
-            // using (StreamReader oReader = new StreamReader(inFileName, Encoding.GetEncoding("utf-8")))
-            // {
-                // xmlDoc = XDocument.Load(oReader);
-                XDocument xmlDoc = XDocument.Load(inFileName);
-                xmlDoc.Element("breakfast_menu")
-                  .Element("food")
-                  .Remove();
+      var inFileName = @"D:\#Projects\#REPOS\PikCorrector\PIK_PluginConfig.xml";
+      XDocument xmlDoc = XDocument.Load(inFileName);
+      xmlDoc.Descendants("PluginInfo")
+      .Where(x => x.Element("AssemblyName").Value == "Revit_GroupManager")
+      .Remove();
 
-// target.Attribute("prive").Value = "changed";
-xmlDoc.Save(Console.Out);
-                // xmlDoc.Element("GroupCIDsS").Remove();
+      xmlDoc.Save(@"D:\#Projects\#REPOS\PikCorrector\PIK_PluginConfig.xml");
 
-// xdoc.Descendants("add")
-//     .Where(x => (string)x.Attribute("key") == key)
-//     .Remove();
-
-                // xmlDoc.Save(@"C:\#Coding\PikCorrector\PIK_PluginConfig.xml");
-            // }
-            // Console.WriteLine("Hello World!");
-        }
+      // delete unnesesery folders
+      Directory.Delete("", true);
     }
+  }
 }

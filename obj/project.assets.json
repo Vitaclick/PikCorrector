@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\#Coding\\PikCorrector\\PikCorrector.csproj",
+      "projectUniqueName": "d:\\#Projects\\#REPOS\\PikCorrector\\PikCorrector.csproj",
       "projectName": "PikCorrector",
-      "projectPath": "C:\\#Coding\\PikCorrector\\PikCorrector.csproj",
+      "projectPath": "d:\\#Projects\\#REPOS\\PikCorrector\\PikCorrector.csproj",
       "packagesPath": "C:\\Users\\Vitaclick\\.nuget\\packages\\",
-      "outputPath": "C:\\#Coding\\PikCorrector\\obj\\",
+      "outputPath": "d:\\#Projects\\#REPOS\\PikCorrector\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -705,6 +705,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Vitaclick\\.dotnet\\NuGetFallbackFolder": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
