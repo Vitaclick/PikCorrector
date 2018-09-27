@@ -24,6 +24,9 @@ namespace PikCorrector
 xmlDoc.Save(Console.Out);
                 // xmlDoc.Element("GroupCIDsS").Remove();
 
+// xdoc.Descendants("add")
+//     .Where(x => (string)x.Attribute("key") == key)
+//     .Remove();
 
                 // xmlDoc.Save(@"C:\#Coding\PikCorrector\PIK_PluginConfig.xml");
             // }
