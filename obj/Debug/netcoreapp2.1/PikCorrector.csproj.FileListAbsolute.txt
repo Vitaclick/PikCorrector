@@ -1,0 +1,11 @@
+C:\#Coding\PikCorrector\bin\Debug\netcoreapp2.1\PikCorrector.deps.json
+C:\#Coding\PikCorrector\bin\Debug\netcoreapp2.1\PikCorrector.runtimeconfig.json
+C:\#Coding\PikCorrector\bin\Debug\netcoreapp2.1\PikCorrector.runtimeconfig.dev.json
+C:\#Coding\PikCorrector\bin\Debug\netcoreapp2.1\PikCorrector.dll
+C:\#Coding\PikCorrector\bin\Debug\netcoreapp2.1\PikCorrector.pdb
+C:\#Coding\PikCorrector\obj\Debug\netcoreapp2.1\PikCorrector.csprojAssemblyReference.cache
+C:\#Coding\PikCorrector\obj\Debug\netcoreapp2.1\PikCorrector.csproj.CoreCompileInputs.cache
+C:\#Coding\PikCorrector\obj\Debug\netcoreapp2.1\PikCorrector.AssemblyInfoInputs.cache
+C:\#Coding\PikCorrector\obj\Debug\netcoreapp2.1\PikCorrector.AssemblyInfo.cs
+C:\#Coding\PikCorrector\obj\Debug\netcoreapp2.1\PikCorrector.dll
+C:\#Coding\PikCorrector\obj\Debug\netcoreapp2.1\PikCorrector.pdb
