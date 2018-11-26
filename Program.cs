@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -27,13 +27,20 @@ namespace PikCorrector
       xmlDoc.Descendants("PluginInfo")
       .Where(x => x.Element("AssemblyName").Value == "OkCommand")
       .Remove();
+      xmlDoc.Descendants("PluginInfo")
+      .Where(x => x.Element("AssemblyName").Value == "BimInspector.Revit")
+      .Remove();
+      xmlDoc.Descendants("PluginInfo")
+      .Where(x => x.Element("AssemblyName").Value == "InspectorConfig")
+      .Remove();
 
       xmlDoc.Save(pluginsConfigpath);
 
       // delete unnesesery folders
       var deleters = new List<string> {
         @"C:\Autodesk\AutoCAD\Pik\Settings\Dll",
-        Path.Combine(userPath, @"Autodesk\Revit\Addins\2017\PIK\OtherAddins")
+        Path.Combine(userPath, @"Autodesk\Revit\Addins\2017\PIK\OtherAddins"),
+        @"C:\ProgramData\Autodesk\ApplicationPlugins\VitroPlugin.bundle"
       };
 
       // add vitrocad folder
