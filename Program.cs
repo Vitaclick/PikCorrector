@@ -20,8 +20,7 @@ namespace PikCorrector
       {
         "ChangeManager",
         "RevitNameValidator",
-        "OkCommand",
-        "Revit_RebarColorFiller"
+        "OkCommand"
       };
 
       void removePlugin(XDocument doc, string keyValue)
