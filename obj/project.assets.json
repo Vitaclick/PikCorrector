@@ -695,11 +695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\malozyomovvv\\Desktop\\#REPOS\\PikCorrector\\PikCorrector.csproj",
+      "projectUniqueName": "C:\\Coding\\PikCorrector\\PikCorrector.csproj",
       "projectName": "PikCorrector",
-      "projectPath": "C:\\Users\\malozyomovvv\\Desktop\\#REPOS\\PikCorrector\\PikCorrector.csproj",
+      "projectPath": "C:\\Coding\\PikCorrector\\PikCorrector.csproj",
       "packagesPath": "C:\\Users\\malozyomovvv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\malozyomovvv\\Desktop\\#REPOS\\PikCorrector\\obj\\",
+      "outputPath": "C:\\Coding\\PikCorrector\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

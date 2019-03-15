@@ -14,11 +14,14 @@ namespace PikCorrector
     static void Main(string[] args)
     {
       var userPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-      var pluginsConfigpath = Path.Combine(userPath, @"Autodesk\Revit\Addins\2017\PIK\PIK_PluginConfig.xml");
+      var pluginsConfigPaths = new List<string>() {
+        Path.Combine(userPath, @"Autodesk\Revit\Addins\2017\PIK\PIK_PluginConfig.xml"),
+        Path.Combine(userPath, @"Autodesk\Revit\Addins\2019\PIK\PIK_PluginConfig.xml")
+      };
 
       var pluginsToRemove = new List<string>
       {
-        "ChangeManager",
+        //"ChangeManager",
         "RevitNameValidator",
         "OkCommand"
       };
@@ -30,36 +33,34 @@ namespace PikCorrector
           .Remove();
       }
 
-      if (args.Length > 0)
-      {
+      if (args.Length > 0) {
 
-        if (args[0] == "1")
-        {
+        if (args[0] == "1") {
           pluginsToRemove.AddRange(new List<string> {
-          "FamilyManager",
-          "FamilyExplorer",
+          //"FamilyManager",
+          //"FamilyExplorer",
           "BimInspector.Revit",
           "InspectorConfig"
         });
         }
       }
 
+      foreach (var pluginsConfigPath in pluginsConfigPaths) {
+        XDocument xmlDoc = XDocument.Load(pluginsConfigPath);
 
-      XDocument xmlDoc = XDocument.Load(pluginsConfigpath);
+        foreach (var r in pluginsToRemove) {
+          removePlugin(xmlDoc, r);
+        }
 
-      foreach (var r in pluginsToRemove)
-      {
-        removePlugin(xmlDoc, r);
+        xmlDoc.Save(pluginsConfigPath);
+
       }
-
-      xmlDoc.Save(pluginsConfigpath);
-
-
 
       // delete unnesesery folders
       var deleters = new List<string> {
         @"C:\Autodesk\AutoCAD\Pik\Settings\Dll",
         Path.Combine(userPath, @"Autodesk\Revit\Addins\2017\PIK\OtherAddins"),
+        Path.Combine(userPath, @"Autodesk\Revit\Addins\2019\PIK\OtherAddins"),
         @"C:\ProgramData\Autodesk\ApplicationPlugins\VitroPlugin.bundle"
       };
 
@@ -68,15 +69,12 @@ namespace PikCorrector
       //   deleters.Add("vitro path...");
       // }
 
-      foreach (var path in deleters)
-      {
+      foreach (var path in deleters) {
         if (Directory.Exists(path))
-          try
-          {
+          try {
             Directory.Delete(path, true);
           }
-          catch (Exception ex)
-          {
+          catch (Exception ex) {
             Debug.Write(ex.Message);
           }
       }
